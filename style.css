@@ -2,12 +2,34 @@
 margin: 0%;
 padding: 0%;
 box-sizing: border-box;
+
 }
 
 body{
     background: #f5ad4e;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    height: 100vh;
 
+}
+
+.container {
+    width: 600px;
+    background-color: #f7f6f4;
+    padding: 30px;
+    
+}
+
+.content {
+    padding: 20px;
+    
+}
+
+h2{
+    font-size: 14px;
+}
+
+p {
+    font-size: 10px;
 }
