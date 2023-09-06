@@ -14,12 +14,14 @@ body{
     
 
 }
+/*rgb(243, 240, 240*/
 
 .container {
     width: 600px;
-    background-color:rgb(243, 240, 240) 
-    ;
+    background-color: rgb(243, 240, 240) ;
     padding: 30px;
+    box-shadow: 0 2px 16px rgba(0,0,0,1);
+    border-radius:  20px; ;
     
 }
 
@@ -42,3 +44,21 @@ p {
 
 }
 
+.tab_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tab_box .tab_btn {
+    font-size: 12px;
+    font-weight: 600;
+    color: #919191;
+    background: none;
+    border-radius: 3px;
+
+}
