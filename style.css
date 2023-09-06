@@ -11,19 +11,21 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 
 }
 
 .container {
     width: 600px;
-    background-color: #f7f6f4;
+    background-color:rgb(243, 240, 240) 
+    ;
     padding: 30px;
     
 }
 
 .content {
-    padding: 20px;
-    
+    padding: 20px;  
+    display: inline ;
 }
 
 h2{
@@ -33,3 +35,10 @@ h2{
 p {
     font-size: 10px;
 }
+
+.content_box {
+    background: #f5ad4e;
+    color: white;
+
+}
+
