@@ -26,12 +26,7 @@
                     Colocar um link para a receita adicionada aqui
                     Colocar um link para a receita adicionada aqui
                     Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui </p>
+                    Colocar um link para a receita adicionada aqui</p>
             </div>
         </div>
 
@@ -39,11 +34,6 @@
                 <div class="content">
                      <h2>Receita 2</h2>
                         <p>Colocar um link para a receita adicionada aqui
-                        Colocar um link para a receita adicionada aqui
-                        Colocar um link para a receita adicionada aqui
-                        Colocar um link para a receita adicionada aqui
-                        Colocar um link para a receita adicionada aqui
-                        Colocar um link para a receita adicionada aqui
                         Colocar um link para a receita adicionada aqui
                         Colocar um link para a receita adicionada aqui
                         Colocar um link para a receita adicionada aqui
@@ -57,12 +47,7 @@
                 <p>Colocar um link para a receita adicionada aqui
                     Colocar um link para a receita adicionada aqui
                     Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
-                    Colocar um link para a receita adicionada aqui
+                    Colocar um link para a receita adicionada aqu
                     Colocar um link para a receita adicionada aqui</p>
             </div>
         </div>    
@@ -74,11 +59,6 @@
                      Colocar um link para a receita adicionada aqui
                      Colocar um link para a receita adicionada aqui
                      Colocar um link para a receita adicionada aqui
-                     Colocar um link para a receita adicionada aqui
-                     Colocar um link para a receita adicionada aqui
-                     Colocar um link para a receita adicionada aqui
-                     Colocar um link para a receita adicionada aqui
-                     Colocar um link para a receita adicionada aqui
                      Colocar um link para a receita adicionada aqui</p>
             </div>
         </div>
@@ -86,7 +66,7 @@
 
     <script>  
         const tabs= document.querySelectorAll ('.tab_btn');
-        const all_contents= document.querySelectorAll ('.content');
+        const all_content= document.querySelectorAll ('.content');
 
         tabs.forEach((tab, index)=>{    
         tab.addEventListener('click', (e)=>{    
@@ -98,6 +78,9 @@
         var line=document.querySelector('.line');
         line.style.width = e.target.offsetWidth + 'px';
         line.style.left= e.target.offsetLeft + "px";
+        all_content.forEach(content=>{content.classList.remove('active')});
+        all_content[index].classList.add('active');
+            
             })
             
              
