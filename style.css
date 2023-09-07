@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100vh;
     
     
 
@@ -52,6 +52,7 @@ p {
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid #f5ad4e;
+    position: relative;
 }
 
 .tab_box .tab_btn {
@@ -64,6 +65,10 @@ p {
     cursor: pointer;
 }
 
+.tab_box .tab_btn.active{
+    color: #f6991f;
+}
+
 .content_box {
    padding: 20px;
 }
@@ -73,5 +78,6 @@ p {
 }
 
 .content_box .content h2 {
-    margin: bottom 10px;
+    margin-bottom: 10px;
 }
+

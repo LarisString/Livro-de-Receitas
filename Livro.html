@@ -87,7 +87,7 @@
 
 tabs.forEach((tab, index)=>{    
     tab.addEventListener('click', (e)=>{    
-        tabs.forEach(tab=>{tab.classList.remove('acritive')});
+        tabs.forEach(tab=>{tab.classList.remove('active')});
         tab.classList.add('active');
     })
 })
