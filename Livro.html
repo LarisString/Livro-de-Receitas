@@ -14,6 +14,9 @@
             <button class="tab_btn">Receita 2</button>
             <button class="tab_btn">Receita 3</button>
             <button class="tab_btn">Receita 4</button>
+            
+            <div class="line"></div>
+
         </div>
         
         <div class= "content_box">  
@@ -83,14 +86,23 @@
 
     <script>  
         const tabs= document.querySelectorAll ('.tab_btn');
-    const all_contents= document.querySelectorAll ('.content');
+        const all_contents= document.querySelectorAll ('.content');
 
-tabs.forEach((tab, index)=>{    
-    tab.addEventListener('click', (e)=>{    
+        tabs.forEach((tab, index)=>{    
+        tab.addEventListener('click', (e)=>{    
         tabs.forEach(tab=>{tab.classList.remove('active')});
         tab.classList.add('active');
-    })
-})
+
+       
+
+        var line=document.querySelector('.line');
+        line.style.width = e.target.offsetWidth + 'px';
+        line.style.left= e.target.offsetLeft + "px";
+            })
+            
+             
+    
+        })
 
     </script>
 </body>
