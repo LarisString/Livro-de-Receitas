@@ -30,9 +30,9 @@ body{
 	ul.topnav li {
         display: block;
         margin-left: 0.5em;
-margin-right: 30px;
+        margin-right: 30px;
         font-size: 0.9em;
-float:right;
+        float:right;
 }
 
 /* Estilo dos links dentro da lista */
